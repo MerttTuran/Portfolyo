@@ -50,7 +50,7 @@ const Projects = () => {
       category: "web",
       tech: ["React", "Next.js", "Tailwind CSS"],
       links: {
-        github: "#",
+        github: "https://github.com/MerttTuran/Portfolyo",
         live: "#"
       }
     },

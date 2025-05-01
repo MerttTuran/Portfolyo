@@ -20,30 +20,61 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulating form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitMessage({
-        text: 'Mesajınız gönderildi! En kısa sürede size dönüş yapacağım.',
-        isError: false
+    try {
+      const formDataToSend = new FormData();
+      
+      // Add form fields to FormData
+      Object.entries(formData).forEach(([key, value]) => {
+        formDataToSend.append(key, value);
       });
       
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
+      // Add the access key
+      formDataToSend.append('access_key', '150696ac-959a-45af-92be-0838f9e3f3f3');
+      
+      // Add honeypot field to prevent spam
+      formDataToSend.append('botcheck', '');
+      
+      // Send the form using Web3Forms
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formDataToSend
       });
+      
+      const data = await response.json();
+      
+      if (data.success) {
+        setSubmitMessage({
+          text: 'Mesajınız gönderildi! En kısa sürede size dönüş yapacağım.',
+          isError: false
+        });
+        
+        // Reset form after successful submission
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      } else {
+        throw new Error(data.message || 'Bir şeyler yanlış gitti. Lütfen daha sonra tekrar deneyin.');
+      }
+    } catch (error) {
+      setSubmitMessage({
+        text: error instanceof Error ? error.message : 'Bir şeyler yanlış gitti. Lütfen daha sonra tekrar deneyin.',
+        isError: true
+      });
+    } finally {
+      setIsSubmitting(false);
       
       // Clear message after 5 seconds
       setTimeout(() => {
         setSubmitMessage({ text: '', isError: false });
       }, 5000);
-    }, 1500);
+    }
   };
   
   const contactInfo = [
@@ -146,6 +177,9 @@ const Contact = () => {
                 )}
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {/* Honeypot field to prevent spam */}
+                  <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
+                  
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">

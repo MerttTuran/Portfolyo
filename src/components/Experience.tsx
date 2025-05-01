@@ -8,8 +8,8 @@ const Experience = () => {
     {
       title: "Brand Ambassador",
       company: "Divizyon",
-      period: "Eylül 2023 - Devam Ediyor",
-      description: "Dijital iletişim ve teknoloji topluluklarını bir araya getiren stratejik kampüs çalışmaları yürütüyorum.",
+      period: "Aralık 2024 - Devam Ediyor",
+      description: "Divizyon Açık İnovasyon Platformu çatısı altında yürütülen kampüs odaklı stratejik çalışmalarda yer alıyor; kolektif üretim ve öğrenme yaklaşımıyla düzenlenen yazılım sprintlerine katılarak ekip halinde web ve mobil uygulama geliştirme süreçlerinde yeni kazanımlar elde ettim.",
       icon: <FaBriefcase className="text-blue-500" size={24} />,
       skills: ["Dijital İletişim", "Organizasyon", "Topluluk Yönetimi"]
     },
@@ -17,15 +17,15 @@ const Experience = () => {
       title: "Başkan",
       company: "KTÜN Siber Güvenlik Topluluğu",
       period: "Ekim 2022 - Devam Ediyor",
-      description: "Siber güvenlik farkındalığını artırmaya yönelik etkinlikler ve eğitimler organize ediyorum.",
+      description: "Siber güvenlik topluluğunun başkanı olarak, siber güvenlik alanına ilgi duyan öğrencileri bir araya getirerek teknik bilgi paylaşımını teşvik eden etkinlikler ve eğitimler organize ediyor; aynı zamanda ekibimizle birlikte çeşitli Capture The Flag (CTF) yarışmalarına aktif olarak katılım sağlıyoruz.",
       icon: <FaUniversity className="text-green-500" size={24} />,
       skills: ["Liderlik", "Etkinlik Organizasyonu", "Siber Güvenlik Eğitimi"]
     },
     {
-      title: "Siber Güvenlik Uzmanı",
+      title: "Jr. Penetrasyon Tester",
       company: "Sibereum",
-      period: "Ocak 2022 - Aralık 2022",
-      description: "Web ve iç ağ zafiyet testleri gerçekleştirdim. Testlerin ardından teknik raporlama süreçlerinde aktif rol aldım.",
+      period: "Ocak 2024 - Şubat 2025",
+      description: "Web ve iç ağ sistemlerine yönelik kapsamlı zafiyet testleri gerçekleştirdim; elde edilen bulguların teknik düzeyde analiz edilip, üst yönetime ve ilgili birimlere yönelik detaylı raporların hazırlanmasında aktif görev aldım.",
       icon: <FaBriefcase className="text-red-500" size={24} />,
       skills: ["Web Zafiyet Testleri", "Ağ Zafiyet Testleri", "Teknik Raporlama"]
     }
