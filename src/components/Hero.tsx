@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -64,6 +64,16 @@ const Hero = () => {
               className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300"
             >
               <FaLinkedin size={30} />
+            </motion.a>
+            <motion.a 
+              whileHover={{ scale: 1.2, rotate: 5 }}
+              whileTap={{ scale: 0.9 }}
+              href="https://medium.com/@mertTrn" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300"
+            >
+              <FaMedium size={30} />
             </motion.a>
           </div>
         </motion.div>

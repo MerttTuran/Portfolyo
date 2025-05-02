@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -158,6 +158,14 @@ const Contact = () => {
                     className="bg-gray-200 dark:bg-gray-600 p-3 rounded-full text-gray-700 dark:text-gray-300 hover:bg-blue-500 hover:text-white dark:hover:bg-blue-500 transition-colors"
                   >
                     <FaLinkedin size={20} />
+                  </a>
+                  <a 
+                    href="https://medium.com/@mertTrn"  
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-gray-200 dark:bg-gray-600 p-3 rounded-full text-gray-700 dark:text-gray-300 hover:bg-blue-500 hover:text-white dark:hover:bg-blue-500 transition-colors"
+                  >
+                    <FaMedium size={20} />
                   </a>
                 </div>
               </div>
