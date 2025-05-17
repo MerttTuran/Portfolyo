@@ -26,25 +26,25 @@ const Skills = () => {
       title: "Frontend",
       skills: [
         { name: "HTML", icon: <FaHtml5 size={40} className="text-orange-500" />, level: 75 },
-        { name: "CSS", icon: <FaCss3Alt size={40} className="text-blue-500" />, level: 75 },
-        { name: "JavaScript", icon: <SiJavascript size={40} className="text-yellow-500" />, level: 70 },
+        { name: "CSS", icon: <FaCss3Alt size={40} className="text-blue-500" />, level: 50 },
+        { name: "JavaScript", icon: <SiJavascript size={40} className="text-yellow-500" />, level: 50 },
         { name: "React", icon: <FaReact size={40} className="text-blue-400" />, level: 50 },
       ]
     },
     {
       title: "Backend & Genel",
       skills: [
-        { name: "Python", icon: <FaPython size={40} className="text-green-500" />, level: 75 },
-        { name: "C", icon: <TbBrandCSharp size={40} className="text-purple-500" />, level: 60 },
+        { name: "Python", icon: <FaPython size={40} className="text-green-500" />, level: 50 },
+        { name: "C", icon: <TbBrandCSharp size={40} className="text-purple-500" />, level: 50 },
         { name: "Java", icon: <FaJava size={40} className="text-red-500" />, level: 45 },
       ]
     },
     {
       title: "Siber Güvenlik",
       skills: [
-        { name: "Burp Suite", icon: <SiBurpsuite size={40} className="text-orange-700" />, level: 75 },
-        { name: "Nessus", icon: <SiCyberdefenders size={40} className="text-green-600" />, level: 85 },
-        { name: "Acunetix", icon: <SiCyberdefenders size={40} className="text-blue-600" />, level: 75 },
+        { name: "Burp Suite", icon: <SiBurpsuite size={40} className="text-orange-700" />, level: 70 },
+        { name: "Nessus", icon: <SiCyberdefenders size={40} className="text-green-600" />, level: 70 },
+        { name: "Acunetix", icon: <SiCyberdefenders size={40} className="text-blue-600" />, level: 60 },
       ]
     }
   ];
