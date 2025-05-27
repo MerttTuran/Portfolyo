@@ -66,6 +66,7 @@ const Navbar = () => {
     { name: 'Hakkımda', href: '#about' },
     { name: 'Yetkinlikler', href: '#skills' },
     { name: 'Deneyim', href: '#experience' },
+    { name: 'Başarılar', href: '#achievements' },
     { name: 'Projeler', href: '#projects' },
     { name: 'İletişim', href: '#contact' }
   ];

@@ -11,7 +11,7 @@ const Experience = () => {
       period: "Aralık 2024 - Devam Ediyor",
       description: "Divizyon Açık İnovasyon Platformu çatısı altında yürütülen kampüs odaklı stratejik çalışmalarda yer alıyor; kolektif üretim ve öğrenme yaklaşımıyla düzenlenen yazılım sprintlerine katılarak ekip halinde web ve mobil uygulama geliştirme süreçlerinde yeni kazanımlar elde ettim.",
       icon: <FaBriefcase className="text-blue-500" size={24} />,
-      skills: ["Dijital İletişim", "Organizasyon", "Topluluk Yönetimi"]
+      skills: ["Yazılım & Dijital Sanatlar", "Organizasyon", "Topluluk Yönetimi"]
     },
     {
       title: "Başkan",

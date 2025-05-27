@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaJava } from 'react-icons/fa';
-import { SiJavascript, SiCyberdefenders, SiBurpsuite } from 'react-icons/si';
+import { SiJavascript, SiCyberdefenders, SiBurpsuite, SiWireshark, SiGnubash } from 'react-icons/si';
 import { TbBrandCSharp } from 'react-icons/tb';
 
 const Skills = () => {
@@ -36,7 +36,6 @@ const Skills = () => {
       skills: [
         { name: "Python", icon: <FaPython size={40} className="text-green-500" />, level: 50 },
         { name: "C", icon: <TbBrandCSharp size={40} className="text-purple-500" />, level: 50 },
-        { name: "Java", icon: <FaJava size={40} className="text-red-500" />, level: 45 },
       ]
     },
     {
@@ -45,6 +44,9 @@ const Skills = () => {
         { name: "Burp Suite", icon: <SiBurpsuite size={40} className="text-orange-700" />, level: 70 },
         { name: "Nessus", icon: <SiCyberdefenders size={40} className="text-green-600" />, level: 70 },
         { name: "Acunetix", icon: <SiCyberdefenders size={40} className="text-blue-600" />, level: 60 },
+        { name: "Nmap", icon: <SiGnubash size={40} className="text-gray-500" />, level: 65 },
+        { name: "Wireshark", icon: <SiWireshark size={40} className="text-blue-500" />, level: 60 },
+        { name: "msfconsole", icon: <SiGnubash size={40} className="text-red-600" />, level: 55 },
       ]
     }
   ];
